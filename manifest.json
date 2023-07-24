@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Bird",
+  "version": "1.0",
+  "description": "Back to the Twitter blue bird.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
