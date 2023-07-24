@@ -7,3 +7,11 @@ function replaceTwitterIcon() {
 }
 
 replaceTwitterIcon();
+
+window.addEventListener("beforeunload", function (event) {
+  replaceTwitterIcon()
+});
+
+window.addEventListener("visibilitychange", function (event) {
+  replaceTwitterIcon()
+});
