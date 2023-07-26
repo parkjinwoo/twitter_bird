@@ -34,10 +34,9 @@ const resizeObserver = new ResizeObserver(entries => {
     const width = entry.borderBoxSize?.[0].inlineSize;
     if (typeof width === 'number' && width !== prevWidth) {
       prevWidth = width;
-      replaceIcon();
+      replaceSvgIcon();
     }
   }
-  replaceIcon();
 });
 resizeObserver.observe(document.body, { box: 'border-box' });
 
