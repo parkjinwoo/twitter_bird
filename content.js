@@ -40,6 +40,23 @@ const resizeObserver = new ResizeObserver(entries => {
 });
 resizeObserver.observe(document.body, { box: 'border-box' });
 
+const replaceTitleText = () => {
+  const titleElement = document.querySelector('title');
+  const originalTitle = titleElement.innerText;
+
+  if (originalTitle.endsWith('/ X')) {
+    const newTitle = originalTitle.replace('/ X', '/ 트위터');
+    titleElement.innerText = newTitle;
+  } else if (originalTitle === 'X') {
+    titleElement.innerText = '트위터';
+  }
+}
+replaceTitleText();
+
+// observe title change
+const titleObserver = new MutationObserver(replaceTitleText);
+titleObserver.observe(document.querySelector('title'), { subtree: true, characterData: true, childList: true });
+
 // favicon
 const link = document.querySelector('link[rel="shortcut icon"]');
 if (!link) {
