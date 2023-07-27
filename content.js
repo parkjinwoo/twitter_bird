@@ -42,6 +42,9 @@ resizeObserver.observe(document.body, { box: 'border-box' });
 
 const replaceTitleText = () => {
   const titleElement = document.querySelector('title');
+  if (!titleElement) {
+    return;
+  }
   const originalTitle = titleElement.innerText;
 
   if (originalTitle.endsWith('/ X')) {
