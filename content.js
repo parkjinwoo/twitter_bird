@@ -82,7 +82,7 @@ const twitterLanguageTitles = {
 
 const getLang = () => {
   const lang = document.documentElement.lang.toLowerCase() || navigator.language.toLowerCase();
-  return lang.startsWith('zh') ? lang : lang.split('-')[0].toLowerCase()
+  return lang.startsWith('zh') ? lang : lang.split('-')[0].toLowerCase();
 };
 
 const replaceTitleText = () => {
@@ -101,10 +101,9 @@ const replaceTitleText = () => {
 };
 replaceTitleText();
 
-// observe title change
-const titleObserver = new MutationObserver(replaceTitleText);
-const titleElement = document.querySelector('title');
-titleElement instanceof Node && titleObserver.observe(titleElement, { subtree: true, characterData: true, childList: true });
+// observe head change
+const headObserver = new MutationObserver(replaceTitleText);
+headObserver.observe(document.head, { subtree: true, characterData: true, childList: true });
 
 // favicon
 const link = document.querySelector('link[rel="shortcut icon"]');
