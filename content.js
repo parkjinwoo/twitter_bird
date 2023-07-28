@@ -47,37 +47,37 @@ const twitterLanguageTitles = {
   'en': 'Twitter',
   'ar': 'تويتر',
   'bn': 'টুইটার',
-  'cs': 'Twitter', // 'Twitter v češtině',
-  'da': 'Twitter', // 'Twitter på dansk',
-  'de': 'Twitter', // 'Twitter auf Deutsch',
-  'el': 'Twitter', // 'Twitter στα ελληνικά',
-  'es': 'Twitter', // 'Twitter en español',
+  'cs': 'Twitter', // 'Twitter v češtině'
+  'da': 'Twitter', // 'Twitter på dansk'
+  'de': 'Twitter', // 'Twitter auf Deutsch'
+  'el': 'Twitter', // 'Twitter στα ελληνικά'
+  'es': 'Twitter', // 'Twitter en español'
   'fa': 'توییتر',
-  'fi': 'Twitter', // 'Twitter suomeksi',
-  'fil': 'Twitter', // 'Twitter sa Filipino',
-  'fr': 'Twitter', // 'Twitter en français',
+  'fi': 'Twitter', // 'Twitter suomeksi'
+  'fil': 'Twitter', // 'Twitter sa Filipino'
+  'fr': 'Twitter', // 'Twitter en français'
   'he': 'טוויטר',
   'hi': 'ट्विटर',
-  'hu': 'Twitter', // 'Twitter magyarul',
-  'id': 'Twitter', // 'Twitter dalam Bahasa Indonesia',
-  'it': 'Twitter', // 'Twitter in italiano',
+  'hu': 'Twitter', // 'Twitter magyarul'
+  'id': 'Twitter', // 'Twitter dalam Bahasa Indonesia'
+  'it': 'Twitter', // 'Twitter in italiano'
   'ja': 'ツイッター',
   'ko': '트위터',
-  'msa': 'Twitter', // 'Twitter dalam Bahasa Melayu',
-  'nl': 'Twitter', // 'Twitter in het Nederlands',
-  'no': 'Twitter', // 'Twitter på norsk',
-  'pl': 'Twitter', // 'Twitter po polsku',
-  'pt': 'Twitter', // 'Twitter em português',
-  'ro': 'Twitter', // 'Twitter în română',
+  'msa': 'Twitter', // 'Twitter dalam Bahasa Melayu'
+  'nl': 'Twitter', // 'Twitter in het Nederlands'
+  'no': 'Twitter', // 'Twitter på norsk'
+  'pl': 'Twitter', // 'Twitter po polsku'
+  'pt': 'Twitter', // 'Twitter em português'
+  'ro': 'Twitter', // 'Twitter în română'
   'ru': 'Твиттер',
-  'sv': 'Twitter', // 'Twitter på svenska',
+  'sv': 'Twitter', // 'Twitter på svenska'
   'th': 'ทวิตเตอร์',
-  'tr': 'Twitter', // 'Twitter Türkçe',
+  'tr': 'Twitter', // 'Twitter Türkçe'
   'uk': 'Твіттер',
   'ur': 'ٹویٹر',
-  'vi': 'Twitter', // 'Twitter bằng tiếng Việt',
-  'zh-cn': 'Twitter', // 'Twitter 中文（简体）',
-  'zh-tw': 'Twitter', // 'Twitter 中文（繁體）'
+  'vi': 'Twitter', // 'Twitter bằng tiếng Việt'
+  'zh-cn': 'Twitter', // 'Twitter 中文（简体）'
+  'zh-tw': 'Twitter' // 'Twitter 中文（繁體）'
 };
 
 const getLang = () => {
